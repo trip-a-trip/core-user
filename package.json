@@ -1,0 +1,74 @@
+{
+  "name": "core-user",
+  "version": "1.0.0",
+  "repository": "git@github.com:trip-a-trip/core-user.git",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn nodemon",
+    "build": "yarn tsn",
+    "prod": "yarn pm2-runtime ./ecosystem.config.js",
+    "pretty": "yarn prettier --write .",
+    "commit": "yarn git-cz",
+    "lint:code": "yarn eslint \"./**/*.{ts,tsx}\"",
+    "types": "yarn tsc --noEmit",
+    "release": "yarn standard-version"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@solid-soda/tsn": "^1.2.3",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "@yarnpkg/pnpify": "^2.0.0-rc.22",
+    "commitizen": "^4.0.4",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-node": "latest",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import-helpers": "^1.0.2",
+    "eslint-plugin-unicorn": "^18.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.3",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
+    "standard-version": "^7.1.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@solid-soda/config": "^2.2.0",
+    "fastify": "^2.14.1",
+    "pm2": "^4.4.0",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.2.0",
+    "uid": "^1.0.0"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{tsx,ts,js,jsx,scss,css,js,json,md}": [
+      "yarn prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged",
+      "commit-msg": "yarn commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
