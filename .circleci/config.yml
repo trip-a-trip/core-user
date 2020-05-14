@@ -38,6 +38,7 @@ workflows:
             - eslint
             - types
       - deploy/roll_out:
+          notify_user: '-488110451'
           ssh_user: SSH_USER
           ssh_host: SSH_HOST
           org_name: 'tripatrip'
