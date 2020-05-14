@@ -45,6 +45,7 @@ workflows:
           image_version: CIRCLE_TAG
           path_to_app: PATH_TO_APP
           apply_post_install: false
+          post_install_script: 'echo 0'
           container_name: 'user_app'
           filters:
             tags:
