@@ -11,6 +11,7 @@ export class SignUpController implements Controller {
   constructor(private readonly registrator: Registrator) {}
 
   method = HttpMethod.Post;
+
   route = '/v1/sign-up';
 
   handle: RequestHandler = async (_, reply) => {

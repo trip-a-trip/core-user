@@ -102,6 +102,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:4.2.5"
       ],
       [
+        "json-schema",
+        "npm:0.2.5"
+      ],
+      [
         "lint-staged",
         "npm:10.2.2"
       ],
@@ -167,6 +171,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unicorn", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:18.0.1"],
             ["fastify", "npm:2.14.1"],
             ["husky", "npm:4.2.5"],
+            ["json-schema", "npm:0.2.5"],
             ["lint-staged", "npm:10.2.2"],
             ["nodemon", "npm:2.0.3"],
             ["pm2", "npm:4.4.0"],
@@ -3050,6 +3055,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-unicorn", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:18.0.1"],
             ["fastify", "npm:2.14.1"],
             ["husky", "npm:4.2.5"],
+            ["json-schema", "npm:0.2.5"],
             ["lint-staged", "npm:10.2.2"],
             ["nodemon", "npm:2.0.3"],
             ["pm2", "npm:4.4.0"],
@@ -6479,6 +6485,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/json-schema-npm-0.2.3-018ee3dfc9-3.zip/node_modules/json-schema/",
           "packageDependencies": [
             ["json-schema", "npm:0.2.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.2.5", {
+          "packageLocation": "./.yarn/cache/json-schema-npm-0.2.5-5ed2bbc92a-3.zip/node_modules/json-schema/",
+          "packageDependencies": [
+            ["json-schema", "npm:0.2.5"]
           ],
           "linkType": "HARD",
         }]

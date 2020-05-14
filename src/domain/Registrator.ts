@@ -1,4 +1,5 @@
 import { singleton } from 'tsyringe';
+
 import uid from 'uid';
 
 import { UserStorage } from './UserStorage';

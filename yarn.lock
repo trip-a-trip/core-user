@@ -2581,6 +2581,7 @@ __metadata:
     eslint-plugin-unicorn: ^18.0.1
     fastify: ^2.14.1
     husky: ^4.2.5
+    json-schema: ^0.2.5
     lint-staged: ^10.1.3
     nodemon: ^2.0.3
     pm2: ^4.4.0
@@ -5692,6 +5693,13 @@ fsevents@^1.2.7:
   version: 0.2.3
   resolution: "json-schema@npm:0.2.3"
   checksum: 3/d382ea841f0af5cf6ae3b63043c6ddbd144086de52342b5dd32d8966872dce1e0ed280f6b27c5fba97e50cf8640f27b593e039cb95df365718ada03ef0feb9f2
+  languageName: node
+  linkType: hard
+
+"json-schema@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "json-schema@npm:0.2.5"
+  checksum: 3/553d8f98467d27b7a15445e1b21b0edc1ab3fc374b80f3f659b672b65cf132a4854b6d676625f221d80340aa922cd37c0cff1ad3ad5389474f4a5c1079d2c97b
   languageName: node
   linkType: hard
 

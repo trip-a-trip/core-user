@@ -1,13 +1,14 @@
 import { singleton } from 'tsyringe';
 import fastify, { FastifyInstance } from 'fastify';
+import { Configuration } from '@solid-soda/config';
 
 import { Controller } from './Controller';
 import { SignUpController } from './SignUpController';
-import { Configuration } from '@solid-soda/config';
 
 @singleton()
 export class HttpEntrypoint {
   private readonly app: FastifyInstance;
+
   private readonly port: number;
 
   constructor(config: Configuration, signUp: SignUpController) {
