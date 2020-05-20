@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/trip-a-trip/core-user/compare/v1.0.0...v1.1.0) (2020-05-20)
+
+### Features
+
+- add database saving ([258b1f5](https://github.com/trip-a-trip/core-user/commit/258b1f53531b11ef3292a4bf547eca6a89d46ef4))
+
+### Bug Fixes
+
+- fix notify format ([7df8e43](https://github.com/trip-a-trip/core-user/commit/7df8e43a78b3b912c20bc38675cf04abe8438cab))
+
 ## 1.0.0 (2020-05-20)
 
 ### Features
