@@ -1,25 +1,29 @@
-import Knex from 'knex';
 import { inject, injectable } from 'tsyringe';
+import { Connection } from 'typeorm';
 
 import { UserRepository } from '&app/domain/UserRepository';
-import { queryBuilderToken } from '&app/external/queryBuilder';
+import { dbConnectionToken } from '&app/external/dbConnection';
 
 import { USER_TABLE } from './TABLES';
 
 @injectable()
 export class DbUserRepository implements UserRepository {
   constructor(
-    @inject(queryBuilderToken)
-    private readonly qb: Knex,
+    @inject(dbConnectionToken)
+    private readonly db: Promise<Connection>,
   ) {}
 
   count = async (): Promise<number> => {
-    const result = await this.qb.table(USER_TABLE).count().first();
+    const connection = await this.db;
 
-    if (!result) {
+    const result = await connection.query(`SELECT count(*) from ${USER_TABLE}`);
+
+    try {
+      const { count } = result[0];
+
+      return count;
+    } catch (error) {
       return 0;
     }
-
-    return Number(result.count);
   };
 }

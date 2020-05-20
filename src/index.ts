@@ -8,12 +8,12 @@ import { UserStorage } from './domain/UserStorage';
 import { UserRepository } from './domain/UserRepository';
 import { DbUserStorage } from './infrastructure/DBUserStorage';
 import { DbUserRepository } from './infrastructure/DBUserRepository';
-import { queryBuilderToken, createQueryBuilder } from './external/queryBuilder';
+import { dbConnectionToken, createDbConnection } from './external/dbConnection';
 
 container.registerInstance(Configuration as any, config);
-container.register(queryBuilderToken, {
+container.register(dbConnectionToken, {
   useFactory: (c) => {
-    return createQueryBuilder(c.resolve(Configuration as any));
+    return createDbConnection(c.resolve(Configuration as any));
   },
 });
 

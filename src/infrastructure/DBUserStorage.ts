@@ -1,19 +1,26 @@
 import { inject, injectable } from 'tsyringe';
-import Knex from 'knex';
+import { Connection } from 'typeorm';
 
-import { queryBuilderToken } from '&app/external/queryBuilder';
 import { UserStorage } from '&app/domain/UserStorage';
+import { dbConnectionToken } from '&app/external/dbConnection';
 
 import { USER_TABLE } from './TABLES';
 
 @injectable()
 export class DbUserStorage implements UserStorage {
   constructor(
-    @inject(queryBuilderToken)
-    private readonly qb: Knex,
+    @inject(dbConnectionToken)
+    private readonly db: Promise<Connection>,
   ) {}
 
   saveNewUser = async (id: string): Promise<void> => {
-    await this.qb.insert({ id }).table(USER_TABLE);
+    const connection = await this.db;
+
+    await connection
+      .createQueryBuilder()
+      .insert()
+      .into(USER_TABLE)
+      .values({ id })
+      .execute();
   };
 }
