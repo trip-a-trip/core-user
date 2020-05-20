@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/trip-a-trip/core-user/compare/v1.1.2...v1.1.3) (2020-05-20)
+
+### Bug Fixes
+
+- try to fix knex bug ([11dbda8](https://github.com/trip-a-trip/core-user/commit/11dbda8689e7514eb96fa4449173cfd1be4d3bc5))
+
 ### [1.1.2](https://github.com/trip-a-trip/core-user/compare/v1.1.1...v1.1.2) (2020-05-20)
 
 ### Bug Fixes
