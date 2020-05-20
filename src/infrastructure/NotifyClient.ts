@@ -17,9 +17,9 @@ export class NotifyClient {
     const payload = {
       user: this.userId,
       message: {
-        medium: 'production',
-        from: 'service',
-        name: 'core-user',
+        medium: 'service',
+        from: 'core-user',
+        name: 'production',
         text: message,
       },
     };
