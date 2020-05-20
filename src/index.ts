@@ -8,8 +8,14 @@ import { UserStorage } from './domain/UserStorage';
 import { UserRepository } from './domain/UserRepository';
 import { DbUserStorage } from './infrastructure/DBUserStorage';
 import { DbUserRepository } from './infrastructure/DBUserRepository';
+import { queryBuilderToken, createQueryBuilder } from './external/queryBuilder';
 
 container.registerInstance(Configuration as any, config);
+container.register(queryBuilderToken, {
+  useFactory: (c) => {
+    return createQueryBuilder(c.resolve(Configuration as any));
+  },
+});
 
 container.register<UserStorage>(UserStorage as any, {
   useClass: DbUserStorage,

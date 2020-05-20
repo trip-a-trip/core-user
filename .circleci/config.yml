@@ -45,8 +45,8 @@ workflows:
           image_name: 'core-user'
           image_version: CIRCLE_TAG
           path_to_app: PATH_TO_APP
-          apply_post_install: false
-          post_install_script: 'echo 0'
+          apply_post_install: true
+          post_install_script: 'yarn evolutions -y'
           container_name: 'user_app'
           filters:
             tags:
