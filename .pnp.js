@@ -119,7 +119,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "knex",
-        "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1"
+        "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.20.2"
       ],
       [
         "lint-staged",
@@ -195,7 +195,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify", "npm:2.14.1"],
             ["husky", "npm:4.2.5"],
             ["json-schema", "npm:0.2.5"],
-            ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1"],
+            ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.20.2"],
             ["lint-staged", "npm:10.2.2"],
             ["nodemon", "npm:2.0.3"],
             ["pg", "npm:7.14.0"],
@@ -1896,6 +1896,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["bluebird", [
+        ["npm:3.7.2", {
+          "packageLocation": "./.yarn/cache/bluebird-npm-3.7.2-6a54136ee3-3.zip/node_modules/bluebird/",
+          "packageDependencies": [
+            ["bluebird", "npm:3.7.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["boxen", [
         ["npm:4.2.0", {
           "packageLocation": "./.yarn/cache/boxen-npm-4.2.0-471e88ddba-3.zip/node_modules/boxen/",
@@ -2659,6 +2668,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:4.1.1", {
+          "packageLocation": "./.yarn/cache/commander-npm-4.1.1-22a0fe921b-3.zip/node_modules/commander/",
+          "packageDependencies": [
+            ["commander", "npm:4.1.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:5.1.0", {
           "packageLocation": "./.yarn/cache/commander-npm-5.1.0-7e939e7832-3.zip/node_modules/commander/",
           "packageDependencies": [
@@ -3151,7 +3167,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify", "npm:2.14.1"],
             ["husky", "npm:4.2.5"],
             ["json-schema", "npm:0.2.5"],
-            ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1"],
+            ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.20.2"],
             ["lint-staged", "npm:10.2.2"],
             ["nodemon", "npm:2.0.3"],
             ["pg", "npm:7.14.0"],
@@ -4231,15 +4247,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/eslint-visitor-keys-npm-1.1.0-58aec922ec-3.zip/node_modules/eslint-visitor-keys/",
           "packageDependencies": [
             ["eslint-visitor-keys", "npm:1.1.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["esm", [
-        ["npm:3.2.25", {
-          "packageLocation": "./.yarn/cache/esm-npm-3.2.25-762b3ebd40-3.zip/node_modules/esm/",
-          "packageDependencies": [
-            ["esm", "npm:3.2.25"]
           ],
           "linkType": "HARD",
         }]
@@ -6766,29 +6773,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["knex", [
-        ["virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1", {
-          "packageLocation": "./.yarn/$$virtual/knex-virtual-14f077fde5/0/cache/knex-npm-0.21.1-8de7c8b1cd-3.zip/node_modules/knex/",
+        ["virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.20.2", {
+          "packageLocation": "./.yarn/$$virtual/knex-virtual-530bc1a4af/0/cache/knex-npm-0.20.2-8a90a29df1-3.zip/node_modules/knex/",
           "packageDependencies": [
-            ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1"],
+            ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.20.2"],
+            ["bluebird", "npm:3.7.2"],
             ["colorette", "npm:1.1.0"],
-            ["commander", "npm:5.1.0"],
+            ["commander", "npm:4.1.1"],
             ["debug", "virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.1.1"],
-            ["esm", "npm:3.2.25"],
             ["getopts", "npm:2.2.5"],
             ["inherits", "npm:2.0.4"],
             ["interpret", "npm:2.0.0"],
             ["liftoff", "npm:3.1.0"],
             ["lodash", "npm:4.17.15"],
-            ["mkdirp", "npm:1.0.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["mssql", null],
             ["mysql", null],
             ["mysql2", null],
             ["pg", "npm:7.14.0"],
-            ["pg-connection-string", "npm:2.2.0"],
+            ["pg-connection-string", "npm:2.1.0"],
             ["sqlite3", null],
-            ["tarn", "npm:3.0.0"],
+            ["tarn", "npm:2.0.0"],
             ["tildify", "npm:2.0.0"],
-            ["uuid", "npm:7.0.3"],
+            ["uuid", "npm:3.4.0"],
             ["v8flags", "npm:3.1.3"]
           ],
           "packagePeers": [
@@ -8702,10 +8709,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.2.0", {
-          "packageLocation": "./.yarn/cache/pg-connection-string-npm-2.2.0-cfe10b0609-3.zip/node_modules/pg-connection-string/",
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/pg-connection-string-npm-2.1.0-87b0d5fbfc-3.zip/node_modules/pg-connection-string/",
           "packageDependencies": [
-            ["pg-connection-string", "npm:2.2.0"]
+            ["pg-connection-string", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -10994,10 +11001,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["tarn", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/tarn-npm-3.0.0-406a548cfa-3.zip/node_modules/tarn/",
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/tarn-npm-2.0.0-ff3500d1e1-3.zip/node_modules/tarn/",
           "packageDependencies": [
-            ["tarn", "npm:3.0.0"]
+            ["tarn", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]
