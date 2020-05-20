@@ -13,7 +13,7 @@ export const createQueryBuilder = (config: Configuration) => {
   );
 
   const createSslConfig = config.isProd()
-    ? () => ({ ca: readFileSync(certPath) })
+    ? () => ({ ca: readFileSync(certPath).toString() })
     : () => undefined;
 
   return knex({
