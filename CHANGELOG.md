@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/trip-a-trip/core-user/compare/v1.1.3...v1.1.4) (2020-05-20)
+
+### Bug Fixes
+
+- fix typings ([00f12c9](https://github.com/trip-a-trip/core-user/commit/00f12c9f68df0b2a8565dd993e3214c5472ce683))
+
 ### [1.1.3](https://github.com/trip-a-trip/core-user/compare/v1.1.2...v1.1.3) (2020-05-20)
 
 ### Bug Fixes
