@@ -131,7 +131,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "pg",
-        "npm:8.0.3"
+        "npm:7.14.0"
       ],
       [
         "pm2",
@@ -198,7 +198,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1"],
             ["lint-staged", "npm:10.2.2"],
             ["nodemon", "npm:2.0.3"],
-            ["pg", "npm:8.0.3"],
+            ["pg", "npm:7.14.0"],
             ["pm2", "npm:4.4.0"],
             ["prettier", "npm:2.0.5"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -3154,7 +3154,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["knex", "virtual:b411914dfeeeb178a676a72e3afada3f236b22774eecb53f637a0bbf6cf1acbc52508e94fd0546dc7ec997467d90bdbfd370bd3f57b5f94bdbd307b54b1056bd#npm:0.21.1"],
             ["lint-staged", "npm:10.2.2"],
             ["nodemon", "npm:2.0.3"],
-            ["pg", "npm:8.0.3"],
+            ["pg", "npm:7.14.0"],
             ["pm2", "npm:4.4.0"],
             ["prettier", "npm:2.0.5"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -6783,7 +6783,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mssql", null],
             ["mysql", null],
             ["mysql2", null],
-            ["pg", "npm:8.0.3"],
+            ["pg", "npm:7.14.0"],
             ["pg-connection-string", "npm:2.2.0"],
             ["sqlite3", null],
             ["tarn", "npm:3.0.0"],
@@ -8679,15 +8679,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pg", [
-        ["npm:8.0.3", {
-          "packageLocation": "./.yarn/cache/pg-npm-8.0.3-a4ca4af1dd-3.zip/node_modules/pg/",
+        ["npm:7.14.0", {
+          "packageLocation": "./.yarn/cache/pg-npm-7.14.0-c762b208e5-3.zip/node_modules/pg/",
           "packageDependencies": [
-            ["pg", "npm:8.0.3"],
+            ["pg", "npm:7.14.0"],
             ["buffer-writer", "npm:2.0.0"],
             ["packet-reader", "npm:1.0.0"],
             ["pg-connection-string", "npm:0.1.3"],
-            ["pg-pool", "virtual:a4ca4af1dd7e8ea11a1d7bdda05b3c0096e4e5145dd80a76143de07665e8db8a356cfe251b62a519abbacc5e543686d47ed8ecb01b3a9f835f076b65c8b9bcdd#npm:3.2.1"],
-            ["pg-protocol", "npm:1.2.4"],
+            ["pg-pool", "virtual:c762b208e57b6ccdd47f5cd8984a2c97f46700f27f3decb80e679be824bd51ee05b594d4584213dc0849e89c92d20e54d58605b0ca209b95948a5eb48ef408ba#npm:2.0.10"],
             ["pg-types", "npm:2.2.0"],
             ["pgpass", "npm:1.0.2"],
             ["semver", "npm:4.3.2"]
@@ -8721,23 +8720,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pg-pool", [
-        ["virtual:a4ca4af1dd7e8ea11a1d7bdda05b3c0096e4e5145dd80a76143de07665e8db8a356cfe251b62a519abbacc5e543686d47ed8ecb01b3a9f835f076b65c8b9bcdd#npm:3.2.1", {
-          "packageLocation": "./.yarn/$$virtual/pg-pool-virtual-7bd91bfcd6/0/cache/pg-pool-npm-3.2.1-962c0084b5-3.zip/node_modules/pg-pool/",
+        ["virtual:c762b208e57b6ccdd47f5cd8984a2c97f46700f27f3decb80e679be824bd51ee05b594d4584213dc0849e89c92d20e54d58605b0ca209b95948a5eb48ef408ba#npm:2.0.10", {
+          "packageLocation": "./.yarn/$$virtual/pg-pool-virtual-92dee2226d/0/cache/pg-pool-npm-2.0.10-fee01816fc-3.zip/node_modules/pg-pool/",
           "packageDependencies": [
-            ["pg-pool", "virtual:a4ca4af1dd7e8ea11a1d7bdda05b3c0096e4e5145dd80a76143de07665e8db8a356cfe251b62a519abbacc5e543686d47ed8ecb01b3a9f835f076b65c8b9bcdd#npm:3.2.1"],
-            ["pg", "npm:8.0.3"]
+            ["pg-pool", "virtual:c762b208e57b6ccdd47f5cd8984a2c97f46700f27f3decb80e679be824bd51ee05b594d4584213dc0849e89c92d20e54d58605b0ca209b95948a5eb48ef408ba#npm:2.0.10"],
+            ["pg", "npm:7.14.0"]
           ],
           "packagePeers": [
             "pg"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["pg-protocol", [
-        ["npm:1.2.4", {
-          "packageLocation": "./.yarn/cache/pg-protocol-npm-1.2.4-0974ec4e6a-3.zip/node_modules/pg-protocol/",
-          "packageDependencies": [
-            ["pg-protocol", "npm:1.2.4"]
           ],
           "linkType": "HARD",
         }]
