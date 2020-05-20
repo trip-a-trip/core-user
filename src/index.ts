@@ -10,18 +10,20 @@ import { DbUserStorage } from './infrastructure/DBUserStorage';
 import { DbUserRepository } from './infrastructure/DBUserRepository';
 import { dbConnectionToken, createDbConnection } from './external/dbConnection';
 
-container.registerInstance(Configuration as any, config);
-container.register(dbConnectionToken, {
-  useFactory: (c) => {
-    return createDbConnection(c.resolve(Configuration as any));
-  },
-});
+const init = async () => {
+  container.registerInstance(Configuration as any, config);
 
-container.register<UserStorage>(UserStorage as any, {
-  useClass: DbUserStorage,
-});
-container.register<UserRepository>(UserRepository as any, {
-  useClass: DbUserRepository,
-});
+  const dbConnection = await createDbConnection(config);
+  container.registerInstance(dbConnectionToken, dbConnection);
 
-container.resolve(HttpEntrypoint).start();
+  container.register<UserStorage>(UserStorage as any, {
+    useClass: DbUserStorage,
+  });
+  container.register<UserRepository>(UserRepository as any, {
+    useClass: DbUserRepository,
+  });
+
+  container.resolve(HttpEntrypoint).start();
+};
+
+init();

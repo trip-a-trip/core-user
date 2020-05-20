@@ -10,13 +10,11 @@ import { USER_TABLE } from './TABLES';
 export class DbUserRepository implements UserRepository {
   constructor(
     @inject(dbConnectionToken)
-    private readonly db: Promise<Connection>,
+    private readonly db: Connection,
   ) {}
 
   count = async (): Promise<number> => {
-    const connection = await this.db;
-
-    const result = await connection.query(`SELECT count(*) from ${USER_TABLE}`);
+    const result = await this.db.query(`SELECT count(*) from ${USER_TABLE}`);
 
     try {
       const { count } = result[0];

@@ -10,13 +10,11 @@ import { USER_TABLE } from './TABLES';
 export class DbUserStorage implements UserStorage {
   constructor(
     @inject(dbConnectionToken)
-    private readonly db: Promise<Connection>,
+    private readonly db: Connection,
   ) {}
 
   saveNewUser = async (id: string): Promise<void> => {
-    const connection = await this.db;
-
-    await connection
+    await this.db
       .createQueryBuilder()
       .insert()
       .into(USER_TABLE)
