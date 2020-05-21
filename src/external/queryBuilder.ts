@@ -23,6 +23,7 @@ export const createQueryBuilder = (config: Configuration) => {
       user: config.getStringOrThrow('DB_USER'),
       password: config.getStringOrThrow('DB_PASSWORD'),
       database: config.getStringOrThrow('DB_NAME'),
+      port: config.getNumberOrThrow('DB_PORT'),
       ssl: createSslConfig(),
     },
   });
