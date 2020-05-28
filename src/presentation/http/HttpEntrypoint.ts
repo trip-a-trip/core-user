@@ -4,6 +4,7 @@ import { Configuration } from '@solid-soda/config';
 
 import { Controller } from './Controller';
 import { SignUpController } from './SignUpController';
+import { CountController } from './CountController';
 
 @singleton()
 export class HttpEntrypoint {
@@ -11,8 +12,12 @@ export class HttpEntrypoint {
 
   private readonly port: number;
 
-  constructor(config: Configuration, signUp: SignUpController) {
-    const controllers: Controller[] = [signUp];
+  constructor(
+    config: Configuration,
+    signUp: SignUpController,
+    count: CountController,
+  ) {
+    const controllers: Controller[] = [signUp, count];
 
     this.app = fastify({ logger: true });
 
