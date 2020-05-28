@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/trip-a-trip/core-user/compare/v1.2.0...v1.3.0) (2020-05-28)
+
+### Features
+
+- add count endpoint ([5a7a364](https://github.com/trip-a-trip/core-user/commit/5a7a364b30e4187cacc2d22ecc39bd35a90a06dc))
+
 ## [1.2.0](https://github.com/trip-a-trip/core-user/compare/v1.1.4...v1.2.0) (2020-05-21)
 
 ### Features
