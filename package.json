@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "yarn nodemon",
     "build": "yarn tsn",
-    "prod": "yarn node dist/main.js",
+    "prod": "yarn node dist/index.js",
     "pretty": "yarn prettier --write .",
     "commit": "yarn git-cz",
     "lint:code": "yarn eslint \"./**/*.{ts,tsx}\"",
