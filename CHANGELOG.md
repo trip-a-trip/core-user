@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/trip-a-trip/core-user/compare/v1.3.0...v1.4.0) (2020-05-29)
+
+### Features
+
+- move user reporting to reporter service ([f77b054](https://github.com/trip-a-trip/core-user/commit/f77b0549bd3fe6f1ddf989cb3d6320127b7f123a))
+
 ## [1.3.0](https://github.com/trip-a-trip/core-user/compare/v1.2.0...v1.3.0) (2020-05-28)
 
 ### Features
