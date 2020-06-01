@@ -22,4 +22,4 @@ This application uses `yarn@berry`, you don't need to install dependencies, all 
 5. Apply DB-evolutions by `NODE_ENV=development yarn evolutions`
 6. Run application by `yarn dev`
 
-Now, you can find service at (http://localhost:3000)[localhost:3001].
+Now, you can find service at [localhost:3001](http://localhost:3000).
